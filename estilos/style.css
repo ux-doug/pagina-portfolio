@@ -1,0 +1,345 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  .krona-one-regular {
+    font-family: "Krona One", sans-serif;
+    font-style: normal;
+  }
+  
+
+/* Corpo da Página, configuração de background */
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #0f031c, #2c0548, #1A001A);
+    color: white;
+    background-image: url("../assets/meu-gif.gif");
+    /* Caminho do arquivo */
+    background-size: cover;
+    /* Faz o GIF cobrir toda a tela */
+    background-position: center;
+
+}
+
+/*Configuração de sobreposição de cor sobre o background principal (GIF)*/
+body::before {
+    content: "";
+    /* Elemento vazio */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #0f031c, #2c0548, #1a001a9f);
+    z-index: -1;
+    /* Fica atrás do conteúdo */
+}
+
+/* CONFIGURAÇÃO DE TÍTULOS E PARÁGRAFOS */
+h1 {
+    font-size: 2.25rem;
+    font-family: "Krona One";
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: "Krona One";
+}
+
+p {
+    font-family: "Montserrat";
+    display: flex;
+    text-align: start;
+    justify-content: center;
+
+}
+
+
+.destaqueTitulo {
+    font-family: "Krona One";
+    font-size: 2.25rem;
+    color: #22D4FD;
+}
+
+.destaqueSobre {
+    color: #22D4FD;
+}
+
+/* CONFIGURAÇÃO DO CONTÉUDO*/
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.apresentacao__conteudo {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 35%;
+    text-align: start;
+    border-radius: 5%;
+    padding: 2%;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(204, 1, 255, 0.021);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.apresentacao__conteudo2 {
+    display: flex;
+    flex-direction: column;
+    gap: 9.5px;
+    width: 35%;
+    text-align: start;
+    border: 5px solid #2c054838;
+    border-radius: 15px;
+    padding: 2%;
+    justify-content: center;
+    background: rgba(234, 1, 255, 0.014);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.apresentacao__conteudo2:hover {
+    transform: scale(1.15);
+}
+
+.apresentacao__links {
+    gap: 32px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+
+}
+
+.apresentacao__links__caixa {
+    font-family: "Montserrat";
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    border: 2px solid #9500ff5e;
+    padding: 4% 4%;
+    width: 50%;
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    background: rgba(234, 1, 255, 0.027);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.404);
+}
+
+.apresentacao__links__caixa:hover {
+
+    font-size: 1.75rem;
+    background-color: #440058;
+    transition: background-color 0.8s ease;
+    animation: upDown 1s ease infinite;
+
+
+}
+
+.apresentacao__links__subtitulo {
+    text-decoration: none;
+    font-family: "Krona One", "sans-serif";
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+/* CONFIGURAÇÃO DE ANIMAÇÕES */
+@keyframes upDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+/* CONFIGURAÇÃO DA FOTO DE PERFIL */
+.fotoeu {
+    width: 35%;
+
+}
+
+.fotoeu2 {
+    width: 35%;
+
+}
+
+
+/* CONFIGURAÇÃO DO RODAPÉ */
+.rodape {
+    text-align: center;
+    background: linear-gradient(to right, #1A001A, #2c0548, #0f031c);
+    padding: 20px;
+
+}
+
+.rodape:hover {
+    animation: upDown 2s ease infinite;
+}
+
+/* CONFIGURAÇÃO DO CABEÇALHO */
+.cabecalho {
+    text-decoration: none;
+    padding: 1% 0 0 2%;
+    background: rgba(234, 1, 255, 0.021);
+    backdrop-filter: blur(50%);
+    padding: 0.9%;
+    border: 2px;
+}
+
+
+.cabecalho__menu {
+    text-decoration: none;
+    display: flex;
+    font-family: "Krona One";
+    font-size: 16px;
+    font-weight: 600px;
+    color: #ffffff;
+
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    border: 12px solid #a600ff00;
+    border-radius: 7px;
+    padding: 0px;
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+
+}
+
+.cabecalho__menu__link:hover {
+    background-color: #43005880;
+    backdrop-filter: blur(50%);
+    transition: background-color 0.4s ease;
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* CONFIGURAÇÃO DO ESPAÇAMENTO */
+
+.espacamento {
+    line-height: 1.6;
+    padding: 3%;
+    text-align: start;
+    font-size: 1rem;
+}
+
+.espacamento2 {
+    line-height: 1.6;
+}
+
+
+/* CONFIGURAÇÃO DESIGN MOBILE*/
+
+
+@media(max-width: 1405px) {
+    .apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5% 5%;
+    }
+
+    .apresentacao__conteudo {
+        text-align: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .apresentacao__conteudo2 {
+        text-align: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .fotoeu {
+        width: 80%;
+
+    }
+
+    .fotoeu2 {
+        width: 80%;
+
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        font-family: "Krona One";
+    }
+
+    .destaqueTitulo {
+        font-family: "Krona One";
+        font-size: 1.3rem;
+        color: #22D4FD;
+    }
+
+    .destaqueSobre {
+        color: #22D4FD;
+    }
+
+    .cabecalho__menu {
+        text-decoration: none;
+        display: flex;
+        font-family: "Krona One";
+        font-size: 16px;
+        font-weight: 600px;
+        color: #ffffff;
+
+    }
+
+    .cabecalho__menu__link {
+        text-decoration: none;
+        border: 12px solid #a600ff00;
+        border-radius: 7px;
+        width: 45%;
+        text-align: center;
+        justify-content: center;
+        color: #ffffff;
+
+    }
+
+    .apresentacao__links__caixa {
+
+        width: 80%;
+
+    }
+
+    .apresentacao__links__subtitulo {
+
+        font-size: 1.3rem;
+
+    }
+
+}
