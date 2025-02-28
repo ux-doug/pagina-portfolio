@@ -153,7 +153,7 @@ p {
 .apresentacao__links__caixa:hover {
 
     font-size: 1.75rem;
-    background-color: #000000;
+    background-color:#9500ff5e;
     transition: background-color 0.8s ease;
     animation: upDown 1s ease infinite;
 
@@ -346,6 +346,9 @@ p {
 
     .apresentacao__links__caixa {
         backdrop-filter: none; /* Remove o filtro se causar problemas */
+        font-size: inherit;  /* Mantém o tamanho da fonte original */
+        background-color: inherit; /* Mantém a cor original */
+        animation: none; /* Remove a animação */
       }
       
       body {
