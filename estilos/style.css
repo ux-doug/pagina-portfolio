@@ -347,4 +347,8 @@ p {
     .apresentacao__links__caixa {
         backdrop-filter: none; /* Remove o filtro se causar problemas */
       }
+      
+      body {
+        overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+      }
 }
