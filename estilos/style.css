@@ -344,14 +344,5 @@ p {
 
     }
 
-    .apresentacao__links__caixa {
-        backdrop-filter: none; /* Remove o filtro se causar problemas */
-        font-size: inherit;  /* Mantém o tamanho da fonte original */
-        background-color: inherit; /* Mantém a cor original */
-        animation: none; /* Remove a animação */
-      }
-      
-      body {
-        overflow-x: hidden; /* Evita rolagem horizontal indesejada */
-      }
+
 }
